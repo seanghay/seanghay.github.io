@@ -3624,6 +3624,13 @@
   }
 }
 
+img#hat {
+  position: absolute;
+  top: 3%;
+  left: 53%;
+  transform: rotate(20deg);
+}
+
 body .overlay {
   position: absolute;
   backdrop-filter: blur(10px);
@@ -3637,7 +3644,7 @@ body .overlay {
 
 html, body {
   background-color: #111111;
-  background: url("https://picsum.photos/1000/1000?random&grayscale") no-repeat center center fixed;
+  background: url("https://picsum.photos/1000/1000?random&grayscale&blur=10") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3752,6 +3759,15 @@ html .box:hover, body .box:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  img#hat {
+    position: absolute;
+    top: 5%;
+    left: 54%;
+    width: 60px;
+    height: 60px;
+    transform: rotate(25deg);
+  }
+
   body .box {
     background: transparent;
   }
